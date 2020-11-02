@@ -198,3 +198,9 @@ footer {
   list-style:none;
   float:left;
 }
+.sendplace {
+  position: relative;
+  left: 485px;
+
+}
+
