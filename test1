@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>高梨　稜</title>
+    <link rel="stylesheet" href="1.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-logo">東京理科大学学部３年</div>
+      <div class="header-list">
+        <ul>
+          <li>自己紹介</li>
+          <li>経験</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>こんにちは<span>.</span></h1>
+        <h2>拝見ありがとうございます</h2>
+      </div>
+
+      <div class="contents">
+        <h3 class="section-title">経験</h3>
+        <div class="contents-item">
+          <img src="h2p.JPEG"　width="250" height="166">
+          <p>留学</p>
+        </div>
+        <div class="contents-item">
+          <img src="h1p.JPG"　width="250" height="166">
+          <p>営業</p>
+        </div>
+        <div class="contents-item">
+          <img src="h3p.JPEG"　width="250" height="166">
+          <p>開発</p>
+        </div>
+        <div class="contents-item">
+          <img src="う">
+          <p>バイト</p>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 class="section-title">お問い合わせ</h3>
+        <p>メールアドレス（必須）</p>
+        <!-- <input>要素を追加してください -->
+        <input>
+
+
+
+        <p>お問い合わせ内容（必須）</p>
+        <!-- <textarea>要素を追加してください -->
+       <textarea></textarea>
+
+        <p>※必須項目は必ずご入力ください</p>
+        <!-- <input>要素を追加してください -->
+        <input class="contact-submit" type="submit" value=送信">
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-logo">高梨稜</div>
+      <div class="footer-list">
+        <ul>
+          <li>東京理科大学所属</li>
+          <li>就活</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
