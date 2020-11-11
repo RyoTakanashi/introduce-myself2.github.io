@@ -17,6 +17,28 @@
           <a href="#" class="login"></a>
         </div>
       </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+<script>
+jQuery(document).ready(function() {
+var offset = 100;
+var duration = 500;
+jQuery(window).scroll(function() {
+if (jQuery(this).scrollTop() > offset) {
+jQuery('.pagetop').fadeIn(duration);
+} else {
+jQuery('.pagetop').fadeOut(duration);
+}
+});
+
+jQuery('.pagetop').click(function(event) {
+event.preventDefault();
+jQuery('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+
     </header>
     <div class="top-wrapper">
       <div class="container">
@@ -42,23 +64,24 @@
           <div class="lesson">
             <div class="lesson-icon">
               <img src="https://prog-8.com/images/html/advanced/html.png">
-              <p>就職活動動機</p>
+              <p>夢</p>
             </div>
-            <p class="txt-contents">ITに対して不慣れな印象をもつ人々がITを使いやすい世の中を作りたい</p>
+            <p class="txt-contents">私の夢はITが不慣れな方もITを使いやすい世の中を作ることを実現することである</p>
           </div>
           <div class="lesson">
             <div class="lesson-icon">
               <img src="https://prog-8.com/images/html/advanced/jQuery.png">
-              <p>就職活動動機２</p>
+              <p>就職活動の軸</p>
             </div>
-            <p class="txt-contents">少子高齢化で飽和している日本市場だけでなく、グローバル市場に目を向ける</p>
+            <p class="txt-contents">私の就職活動の軸は自身がやりがいを感じられる仕事をしたいということです。ここで「やりがいがある」というのは現状に満足せずに成長できる環境や、同じように高い向上心をもつ人たちと働くことです。
+</p>
           </div>
           <div class="lesson">
             <div class="lesson-icon">
               <img src="https://prog-8.com/images/html/advanced/ruby.png">
               <p>希望職種</p>
             </div>
-            <p class="txt-contents">SE,ITコンサルタント、WEBソフトウェアで働きたいと考え、会社選びの軸は成長できる環境があり、社会貢献性が高く、働く人のレベルが高い</p>
+            <p class="txt-contents">コンサルタント、Sier業界で働きたい。終身雇用がなくなりつつあるこの現代社会で，確実にこの先も安定して働ける企業は存在しないと私は考えます．その上で、私は成長できて自身の市場価値を高めることが必要であると思います。</p>
           </div>
           <div class="lesson">
             <div class="lesson-icon">
@@ -73,7 +96,7 @@
 
     <footer>
       <div class="container">
-        <img src="footer.JPG">
+        <img src="smile3.JPG">
         <ul class="name">
           <li>高梨　稜</li>
           <li>東京理科大学</li>
@@ -95,6 +118,10 @@
         <p>
             <input type="submit" value="Send" class="sendplace">
         </p>
-      </form>    </footer>
+      </form>
+
+     </footer>
+
+     <div class="pagetop">↑</div>
   </body>
 </html>
