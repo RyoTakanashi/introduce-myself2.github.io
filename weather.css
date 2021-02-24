@@ -1,0 +1,39 @@
+.weather1 {
+  font-size: 45px;
+}
+
+.Weather {
+
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    /*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.weather2  {
+    font-size: 45px;
+    margin: 0;
+    padding: 0;
+}
+}
+.weatherlogo{
+  width: 150px; ;
+}
+
+
+/* newsapi */
+.newsList {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+      }
+      .newsList img {
+        width: 200px;
+        height: 150px;
+      }
+      .content {
+        width: 200px;
+        border: 1px solid #aaa;
+      }
