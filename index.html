@@ -39,6 +39,53 @@ return false;
 });
 </script>
 
+<!-- WEATHER API -->
+
+<script>
+$(function() {
+  var API_KEY = '0bff8519430739a0397b0f7dc4baa7ad'
+  var city = 'Tokyo';
+  var url = 'http://api.openweathermap.org/data/2.5/forecast?q=' + city + ',jp&units=metric&APPID=' + API_KEY;
+  $.ajax({
+    url: url,
+    dataType: "json",
+    type: 'GET',
+  })
+  .done(function(data) {
+    var insertHTML = "";
+    var cityName = '<h2>' + data.city.name + '</h2>';
+    console.log(data);
+
+    $('#city-name').html(cityName);
+    for (var i = 0; i <= 8; i = i + 4) {
+      insertHTML += buildHTML(data, i);
+    }
+    $('#weather').html(insertHTML);
+  })
+  .fail(function(data) {
+    console.log("失敗しました");
+  });
+});
+
+function buildHTML(data, i) {
+  var Week = new Array("（SUN）","（MON）","（TUE）","（WED）","（THU）","（FRI）","（SAT）");
+  var date = new Date (data.list[i].dt_txt);
+  date.setHours(date.getHours() + 9);
+  var month = date.getMonth()+1;
+  var day = month + "月" + date.getDate() + "日" + Week[date.getDay()] + date.getHours() + "：00";
+  var icon = data.list[i].weather[0].icon;
+  var html =
+  '<div class="weather-report">' +
+    '<p class="weather1" >ー天気予報ー</p>'+
+    '<img class="weatherlogo" src="http://openweathermap.org/img/w/' + icon + '.png">' +
+    '<div class="weather-date">' + day + '</div>' +
+    '<div class="weather-main">'+ data.list[i].weather[0].main + '</div>' +
+    '<div class="weather-temp">' + Math.round(data.list[i].main.temp) + '℃</div>' +
+  '</div>';
+  return html
+}
+</script>
+      
     </header>
     <div class="top-wrapper">
       <div class="container">
